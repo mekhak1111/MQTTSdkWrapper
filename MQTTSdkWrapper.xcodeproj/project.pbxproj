@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		90B3C91B8BD4E5F13E8163CA /* Pods_MQTTSdkWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53AB01A9A21693B4DA39FF3 /* Pods_MQTTSdkWrapper.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		A53AB01A9A21693B4DA39FF3 /* Pods_MQTTSdkWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQTTSdkWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77A5DBE8ED20DE0671F9320 /* Pods-MQTTSdkWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTSdkWrapper.release.xcconfig"; path = "Target Support Files/Pods-MQTTSdkWrapper/Pods-MQTTSdkWrapper.release.xcconfig"; sourceTree = "<group>"; };
+		CF8F6A85853B71318C9C06EF /* Pods-MQTTSdkWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTSdkWrapper.debug.xcconfig"; path = "Target Support Files/Pods-MQTTSdkWrapper/Pods-MQTTSdkWrapper.debug.xcconfig"; sourceTree = "<group>"; };
 		F3A52EC42EEBFE420069C3A6 /* MQTTSdkWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTSdkWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F33939222EEC3663006E4BAB /* Exceptions for "MQTTSdkWrapper" folder in "MQTTSdkWrapper" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				MQTTSdkWrapper.h,
+			);
+			target = F3A52EC32EEBFE420069C3A6 /* MQTTSdkWrapper */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F3A52EC62EEBFE420069C3A6 /* MQTTSdkWrapper */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F33939222EEC3663006E4BAB /* Exceptions for "MQTTSdkWrapper" folder in "MQTTSdkWrapper" target */,
+			);
 			path = MQTTSdkWrapper;
 			sourceTree = "<group>";
 		};
@@ -23,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B3C91B8BD4E5F13E8163CA /* Pods_MQTTSdkWrapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		263E7375F999A72FC0B78EA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F6A85853B71318C9C06EF /* Pods-MQTTSdkWrapper.debug.xcconfig */,
+				B77A5DBE8ED20DE0671F9320 /* Pods-MQTTSdkWrapper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D4EDB8D72CF820F0230AFCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A53AB01A9A21693B4DA39FF3 /* Pods_MQTTSdkWrapper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F3A52EBA2EEBFE420069C3A6 = {
 			isa = PBXGroup;
 			children = (
 				F3A52EC62EEBFE420069C3A6 /* MQTTSdkWrapper */,
 				F3A52EC52EEBFE420069C3A6 /* Products */,
+				263E7375F999A72FC0B78EA3 /* Pods */,
+				6D4EDB8D72CF820F0230AFCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3A52ECD2EEBFE420069C3A6 /* Build configuration list for PBXNativeTarget "MQTTSdkWrapper" */;
 			buildPhases = (
+				951612E6485F04646B52E6AF /* [CP] Check Pods Manifest.lock */,
 				F3A52EBF2EEBFE420069C3A6 /* Headers */,
 				F3A52EC02EEBFE420069C3A6 /* Sources */,
 				F3A52EC12EEBFE420069C3A6 /* Frameworks */,
@@ -75,8 +116,6 @@
 				F3A52EC62EEBFE420069C3A6 /* MQTTSdkWrapper */,
 			);
 			name = MQTTSdkWrapper;
-			packageProductDependencies = (
-			);
 			productName = MQTTSdkWrapper;
 			productReference = F3A52EC42EEBFE420069C3A6 /* MQTTSdkWrapper.framework */;
 			productType = "com.apple.product-type.framework";
@@ -124,6 +163,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		951612E6485F04646B52E6AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MQTTSdkWrapper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3A52EC02EEBFE420069C3A6 /* Sources */ = {
@@ -265,6 +329,7 @@
 		};
 		F3A52ECE2EEBFE420069C3A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF8F6A85853B71318C9C06EF /* Pods-MQTTSdkWrapper.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -277,6 +342,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,16 +354,21 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mekhak.MQTTSdkWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_MODULE = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F3A52ECF2EEBFE420069C3A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B77A5DBE8ED20DE0671F9320 /* Pods-MQTTSdkWrapper.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +381,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,11 +393,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mekhak.MQTTSdkWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_MODULE = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
